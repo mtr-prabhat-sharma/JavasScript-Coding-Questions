@@ -1,0 +1,31 @@
+Arrow functions are not hoisted in JavaScript because they behave differently 
+from regular functions in terms of how they capture the this value and because 
+of their more concise syntax.
+
+Hoisting in JavaScript is the process where variable and function declarations are 
+moved to the top of their containing scope during compilation. This means you can 
+use a function or a variable before it's declared in the code.
+
+However, arrow functions are not hoisted because they are treated as variables rather 
+than function declarations. They are part of the expression syntax. When you define 
+an arrow function, it's essentially equivalent to assigning a function expression to 
+a variable. For example:
+
+// This is a regular function declaration and is hoisted
+function regularFunction() {
+  // ...
+}
+
+// This is an arrow function assigned to a variable and is not hoisted
+const arrowFunction = () => {
+  // ...
+};
+
+Arrow functions capture the this value from their containing lexical context, 
+which is where they are defined. This behavior is different from regular functions, 
+which have their this value determined when they are called. As a result, arrow 
+functions rely on their surrounding context, and hoisting them could lead to 
+unexpected behavior.
+
+To avoid any confusion, it's a good practice to define arrow functions before you 
+use them, just like you would with any other variable or constant declaration.
