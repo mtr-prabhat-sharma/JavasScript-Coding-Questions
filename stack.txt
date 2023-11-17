@@ -1,5 +1,6 @@
 A stack is a linear data structure that follows the principle of 
-Last In First Out (LIFO). 
+Last In First Out (LIFO). (which comes in the last goes first like putting some plates
+in vertical order inside the drawer)
 This means the last element inserted inside the stack is removed first.
 Pushing an item on the top is called PUSH.
 Removing an item (from the top) is called POP.
