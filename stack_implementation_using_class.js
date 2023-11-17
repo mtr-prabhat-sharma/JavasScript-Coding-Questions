@@ -13,7 +13,7 @@ class Stack {
         this.items.push(element);
     }
 
-    /* function to remove element from the stack */
+    /* Function to remove element from the stack */
     pop() {
         if(this.isEmpty()) {
             return 'No elements inside Stack'
@@ -21,6 +21,9 @@ class Stack {
         return this.items.pop();
     }
 
+    /* Function to check stack is empty or not
+        If stack is empty then return TRUE otherwise returns FALSE
+    */
     isEmpty() {
         return this.items.length === 0;
     }
