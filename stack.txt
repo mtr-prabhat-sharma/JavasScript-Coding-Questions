@@ -1,0 +1,12 @@
+A stack is a linear data structure that follows the principle of 
+Last In First Out (LIFO). 
+This means the last element inserted inside the stack is removed first.
+Pushing an item on the top is called PUSH.
+Removing an item (from the top) is called POP.
+
+Some basic operations to perform actions on the stack.
+1 - PUSH: Defined above
+2 - POP: Defined above
+3 - isEmpty: Check if the stack is empty
+4 - isFull: Check if the stack is full
+5 - Peek: Get the value of the top element without removing it
