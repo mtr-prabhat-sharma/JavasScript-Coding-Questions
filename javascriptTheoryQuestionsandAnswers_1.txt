@@ -1,0 +1,19 @@
+Ques 1: What is function currying
+Ans 1: Currying in JavaScript is a process in functional programming in which we can
+transform a function with multiple arguments into a sequence of nesting functions. 
+It returns a new function that expects the next argument inline.
+
+In other words, instead of a function taking all arguments at one time, 
+it takes the first one and returns a new function, which takes the second one 
+and returns a new function, which takes the third one, and so on, until all 
+arguments have been fulfilled.
+
+Foreg:
+function sum(a) {
+    return (b) => {
+        return (c) => {
+            return a + b + c;
+        }
+    }
+}
+console.log(sum(1)(2)(3));
