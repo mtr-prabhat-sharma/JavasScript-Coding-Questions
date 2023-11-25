@@ -17,3 +17,8 @@ function sum(a) {
     }
 }
 console.log(sum(1)(2)(3));
+
+QUES 2: What are higer order functions ?
+ANSWER 2: Higher order functions are those functions that takes another functions
+as an arguments(callbacks) or that returns another functions.
+Foreg: map
