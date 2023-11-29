@@ -28,3 +28,44 @@ const doubledNumbers = numbers.map(function (number) {
 });
 console.log(doubledNumbers); // Outputs: [2, 4, 6, 8]
 
+QUES 3: How to check  object is empty or not ?
+ANS 3:
+    1st method - Using Object.keys(yourObjectName) - This is introduced in ES6. This 
+    will convert the object keys into array and by checking the length we can check object
+    is empty or not.
+    For Eg.
+    let obj = {name:'Prabhat',age:31};
+    let obj1 = {};
+    Object.keys(obj) //['name','age']
+    Object.keys(obj).length // returns 2
+    Object.keys(obj1).length // returns 0
+
+    2nd method - Using for..in loop - We can use this loop with hasOwnProperty to check
+    object is empty not.
+    For eg.
+    let obj = {name:'Prabhat',age:31};
+    let obj1 = {};
+    const res = (objName) => {
+        for(let prop in objName) {
+            if(objName.hasOwnProperty(prop)) {
+                return true
+            }
+        }
+        return false;
+    }
+    console.log(res(obj)) //returns true;
+    console.log(res(obj2)) //returns false;
+
+    3rd Method - Using JSON.stringify(yourObjectName) - If the object is empty then it
+    will return '{}'
+    For eg
+    let obj1 = {name:'prabhat'};
+    let obj2 = {};
+    const res = JSON.stringify(obj2);
+    if(res === '{}'){
+    console.log('object is empty')
+    } else {
+    console.log("object is not empty");
+    }
+
+
