@@ -122,3 +122,19 @@ operations like summing or calculating averages.
 const numbers = [1, 2, 3, 4];
 const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
 // sum is now 10
+
+QUES 7: Difference between slice and splice ?
+ANS 7: 
+Slice - The slice method is used to extract a portion of an array and return a new 
+array without modifying the original array.
+const numbers = [1, 2, 3, 4, 5];
+const slicedArray = numbers.slice(1, 4);
+// slicedArray is [2, 3, 4]
+// numbers is still [1, 2, 3, 4, 5]
+
+splice - The splice method is used to change the contents of an array by removing or replacing 
+existing elements and/or adding new elements in place.
+const num = [1,2,3,4,5,6];
+const res = num.splice(1,2);
+console.log(num);//1,4,5,6
+console.log(res); //2,3
