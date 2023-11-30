@@ -68,4 +68,13 @@ ANS 3:
     console.log("object is not empty");
     }
 
+QUES 4: What is Temporal Deadzone in JavaScript ?
+ANS 4: The temporal dead zone (TDZ) is a specific period in the execution of 
+JavaScript code where variables declared with let and const exist but cannot 
+be accessed or assigned any value. During this phase, accessing or using the 
+variable will result in a ReferenceError.
+For Eg:
+console.log(x); // ReferenceError: Cannot access 'x' before initialization
+let x = 10;
+
 
