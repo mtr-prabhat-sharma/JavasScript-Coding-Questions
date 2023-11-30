@@ -77,4 +77,27 @@ For Eg:
 console.log(x); // ReferenceError: Cannot access 'x' before initialization
 let x = 10;
 
+QUES 5: What is Object.freeze() method in JavaScript ?
+ANS 5: In JavaScript, Object.freeze() is a method that is used to freeze an object. 
+When an object is frozen, its properties become read-only, and no new properties can 
+be added, modified, or removed. 
+For eg:
+const myObject = {
+  property1: 42,
+  property2: 'Hello, World!',
+};
+
+// Freeze the object
+Object.freeze(myObject);
+
+// Attempt to modify a property
+myObject.property1 = 100; // This will not throw an error, but the value won't change
+
+// Attempt to add a new property
+myObject.property3 = 'New property'; // This will not throw an error, but the property won't be added
+
+// Attempt to delete a property
+delete myObject.property2; // This will not throw an error, but the property won't be deleted
+
+console.log(myObject); // The object remains unchanged
 
