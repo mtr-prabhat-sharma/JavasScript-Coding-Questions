@@ -101,3 +101,24 @@ delete myObject.property2; // This will not throw an error, but the property won
 
 console.log(myObject); // The object remains unchanged
 
+QUES 6: Difference between map,filter and reduce ?
+ANS 6: map, filter, and reduce are higher-order functions in JavaScript that operate 
+on arrays.
+1 - map - 
+map transforms each element of an array and produces a new array of the same length.
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map((num) => num * 2);
+// doubled is now [2, 4, 6, 8]
+
+2 - filter -
+filter selects elements from an array that meet a specified condition and produces a new array.
+const numbers = [1, 2, 3, 4];
+const evens = numbers.filter((num) => num % 2 === 0);
+// evens is now [2, 4]
+
+3 - reduce - 
+reduce accumulates values from an array into a single result, often used for 
+operations like summing or calculating averages.
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
+// sum is now 10
