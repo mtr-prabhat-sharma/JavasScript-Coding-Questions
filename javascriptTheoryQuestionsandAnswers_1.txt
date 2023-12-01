@@ -138,3 +138,16 @@ const num = [1,2,3,4,5,6];
 const res = num.splice(1,2);
 console.log(num);//1,4,5,6
 console.log(res); //2,3
+
+QUES 8: Shallow copy vs Deep copy in JavaScript ?
+ANS 8: Shallow copy copies the reference of the array or object so also changes the 
+original array/object when any changes are done inside copied array/object.
+On the other hand deep copy creates the new reference for the copied array/object.
+Ways to do deep copy.
+1 - Using JSON.parse and JSON.stringify;
+eg;
+const originalObj = {name:'Prabhat',address:{zip:1234}};
+const copiedObj = JSON.parse(JSON.stringify(originalObj));
+copiedObj.address.zip = 11111;
+console.log(copiedObj); //{name:'Prabhat',address:{zip:11111}}
+console.log(originalObj); // {name:'Prabhat',address:{zip:1234}}
