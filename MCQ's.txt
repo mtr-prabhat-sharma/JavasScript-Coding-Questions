@@ -26,4 +26,6 @@ c.	Error
 d.	Undefined
 Ans: True
 Explanation: Here the typeof NULL = undefined whereas the typeof null = object and
-typeof undefined = undefined
+typeof undefined = undefined.
+
+
