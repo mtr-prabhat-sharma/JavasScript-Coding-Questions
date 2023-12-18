@@ -48,6 +48,23 @@ c.	“object”
 d.	f Object() { … }
 Ans: f Object() { ... }
 
+6.	What will be the output of the following code ?
+Console.log(typeof null);
+Console.log(null instanceof Object)
+a.	‘Object’, true
+b.	Undefined, true
+c.	Undefined, false
+d.	‘object’, false
+Ans: 'object', false
+Explanation: 
+typeof null: The typeof operator in JavaScript returns a string that 
+specifies the type of the operand. In the case of null, typeof null returns the 
+string 'object'. 
+
+null instanceof Object: The instanceof operator checks if an object is an instance of
+a specified object type. In this case, null is not an instance of Object. 
+Therefore, the second console.log will output false
+
 
 
 
