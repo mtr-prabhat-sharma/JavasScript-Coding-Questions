@@ -1,0 +1,8 @@
+1.	What will be the output of the following code ?
+console.log(NaN === NaN)
+a.	Udefined
+b.	False
+c.	Will throw an error
+d.	True
+Ans: False
+
