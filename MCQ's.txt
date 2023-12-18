@@ -6,3 +6,24 @@ c.	Will throw an error
 d.	True
 Ans: False
 
+2.	What will be the output of the following code ?
+Console.log(‘5’ - - ‘3’)
+a.	‘53’
+b.	‘5undefined3’
+c.	8
+d.	2
+Ans: 8
+Explanation: The - - part in the middle is interpreted as the subtraction operation with the unary negation operator. It's equivalent to 5 - (-3).
+The string '5' is implicitly converted to the number 5.
+The string '-3' is implicitly converted to the number -3.
+The subtraction operation 5 - (-3) results in 8.
+
+3.	What will be the output of the following code?
+Console.log(typeof NULL === typeof undefined)
+a.	True
+b.	False
+c.	Error
+d.	Undefined
+Ans: True
+Explanation: Here the typeof NULL = undefined whereas the typeof null = object and
+typeof undefined = undefined
