@@ -28,4 +28,14 @@ Ans: True
 Explanation: Here the typeof NULL = undefined whereas the typeof null = object and
 typeof undefined = undefined.
 
+4.	What will be the output of the following code ?
+Console.log(3>2>1);
+a.	True
+b.	False
+c.	Error
+d.	Undefined
+
+
+
+
 
