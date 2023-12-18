@@ -34,7 +34,19 @@ a.	True
 b.	False
 c.	Error
 d.	Undefined
+Ans: False
+Explanation: 3 > 2 evaluates to true.
+The result of true is implicitly coerced to a number when compared with 1. 
+In JavaScript, true is coerced to 1, and false is coerced to 0.
+So, the expression becomes 1 > 1, which is false.
 
+5.	What will be the output of the following code ?
+console.log({}?.constructor);
+a.	[object object]
+b.	Object
+c.	“object”
+d.	f Object() { … }
+Ans: f Object() { ... }
 
 
 
