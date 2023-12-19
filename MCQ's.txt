@@ -55,6 +55,7 @@ a.	‘Object’, true
 b.	Undefined, true
 c.	Undefined, false
 d.	‘object’, false
+
 Ans: 'object', false
 Explanation: 
 typeof null: The typeof operator in JavaScript returns a string that 
@@ -65,6 +66,24 @@ null instanceof Object: The instanceof operator checks if an object is an instan
 a specified object type. In this case, null is not an instance of Object. 
 Therefore, the second console.log will output false
 
+7. What will be the output of the following code ?
+const a = [{id:1},{id:2}];
+a.forEach(val => {
+if(val.id === 1) {
+	     val = {id: -1111}
+};
+});
+console.log(a);
+a.	[{id:1},{id:2}]
+b.	[{id: -1111},{id: 2}]
+c.	[undefined,{id: 2}]
+d.	[{id:1},undefined]
+
+Ans: [{id:1},{id:2}]
+Explanation: In the forEach loop, you are iterating over the array a and modifying 
+the val variable inside the loop. However, modifying val inside the loop doesn't 
+affect the original objects in the array. The modifications are local to the loop and 
+do not change the actual objects in the array.
 
 
 
