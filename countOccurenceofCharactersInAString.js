@@ -1,5 +1,4 @@
 function countOccurenceofCharacters(str) {
-    debugger;
     var res = {};
     for(let i=0;i<str.length;i++){
         var char = str[i];
