@@ -86,4 +86,18 @@ affect the original objects in the array. The modifications are local to the loo
 do not change the actual objects in the array.
 
 
+8.	What will the output of following?
+‘use strict’;
+(function hello() {console.log(this)})();
+a.	[object object]
+b.	Window
+c.	Undefined
+d.	{}
+Ans: Undefined
+Explanation: In strict mode ('use strict';), when a function is invoked as a 
+standalone function (not as a method or through the call/apply methods), the this 
+value inside the function will be undefined. In the provided code, the IIFE 
+(Immediately Invoked Function Expression) is invoked as a standalone function, 
+so this inside the function is undefined.
+
 
