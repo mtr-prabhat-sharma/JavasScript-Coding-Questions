@@ -14,4 +14,4 @@ function countOccurenceofCharacters(s) {
     }
     console.log(resStr)
 }
-countOccurenceofCharacters('aabdcdcabdd')
+countOccurenceofCharacters('aabdcdcabdd'); //Output a3b2c2d4
