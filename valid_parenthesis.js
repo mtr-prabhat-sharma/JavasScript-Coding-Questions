@@ -10,7 +10,6 @@ function isBalanced(str) {
        if(obj[char]) {
         arr.push(char);
        } else {
-       // var char = arr.pop();
         if (arr.length === 0 || obj[arr.pop()] !== char) {
             return false; 
           }
