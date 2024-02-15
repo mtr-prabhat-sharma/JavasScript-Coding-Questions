@@ -18,6 +18,7 @@ function lengthOfLongestSubstring(str) {
       seen[char] = next + 1;
       next++;
     }
+    console.log('longest', longest);
     console.log(longestStr);
   }
   

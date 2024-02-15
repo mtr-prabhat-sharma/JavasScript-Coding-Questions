@@ -96,3 +96,28 @@
 //     return merge(left, right);
 // }
 // console.log(mergeSort([4,3,7,5,2,1,8,6]));
+
+
+let obj = {
+    firstName: "abc",
+    lastName: "xyz",
+    fn: function () {
+        console.log(this);
+    },
+    fn1: () => {
+        console.log(this);
+    },
+
+    fn2: function () {
+        let arr = [1, 2, 3, 4];
+        arr.forEach((i) => {
+            console.log(i + this.firstName);
+        });
+    },
+    fn3: function () {
+        let arr = [1, 2, 3, 4];
+        arr.forEach(function (i) {
+            console.log(i + this.firstName);
+        });
+    }
+}
