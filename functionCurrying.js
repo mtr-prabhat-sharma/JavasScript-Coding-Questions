@@ -17,4 +17,4 @@ function sum1(a) {
     }
  }
 
-console.log(sum1(1)(2)(4)(5)());
+console.log(sum1(1)(2)(4)(5)(6)());

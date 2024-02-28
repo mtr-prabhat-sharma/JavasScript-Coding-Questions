@@ -7,4 +7,4 @@ function intersectionTwoArrays(arr1, arr2) {
     })
     console.log(intersectionArr)
 }
-intersectionTwoArrays([2,4,11,5,31],[1,2,3,14,5])
+intersectionTwoArrays([2,4,11,5,31],[1,2,3,14,5]) //[ 2, 5 ]
