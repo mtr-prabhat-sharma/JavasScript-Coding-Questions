@@ -12,4 +12,4 @@ function findDuplicateCharacters(str) {
     }
     return duplicates;
 }
-console.log(findDuplicateCharacters('rab ha tsha ra'));
+console.log(findDuplicateCharacters('rab ha tsha ra')); //[ 'r', 'a', ' ', 'h' ]
