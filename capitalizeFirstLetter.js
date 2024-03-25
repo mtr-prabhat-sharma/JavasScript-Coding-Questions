@@ -11,4 +11,4 @@ function capitalizeFirstLetter(s) {
     let res = cw.join(' ');
     return res;
 }
-console.log(capitalizeFirstLetter("my name is jhony deep"))
+console.log(capitalizeFirstLetter("my name is jhony deep")) //My Name Is Jhony Deep
