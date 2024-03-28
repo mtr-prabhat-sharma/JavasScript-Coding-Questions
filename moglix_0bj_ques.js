@@ -10,6 +10,7 @@ function demo(student) {
     for(let i=0;i<student.length;i++) {
         const {age, ...stu} = student[i];
         if(newObj[age]) {
+            console.log(newObj)
         newObj[age].push(stu);
             
         }else {
