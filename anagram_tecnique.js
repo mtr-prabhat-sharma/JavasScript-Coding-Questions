@@ -8,12 +8,12 @@ function anagram(strArr) {
     for(let i=0;i<strArr.length;i++) {
         let newStr = strArr[i].split('').sort().join('');
         if(res[newStr]) {
-            res[newStr].push(newStr);
+            res[newStr].push(strArr[i]);
         } else {
-            res[newStr] = [newStr];
+            res[newStr] = [strArr[i]];
         }
     }
-    console.log(res); //{ aet: [ 'aet', 'aet', 'aet' ], ant: [ 'ant', 'ant' ], abt: [ 'abt' ] }
-    console.log(Object.values(res)); //[ [ 'aet', 'aet', 'aet' ], [ 'ant', 'ant' ], [ 'abt' ] ]
+    console.log(res); //{ aet: [ 'eat', 'tea', 'ate' ], ant: [ 'tan', 'nat' ], abt: [ 'bat' ] }
+    console.log(Object.values(res)); //[ [ 'eat', 'tea', 'ate' ], [ 'tan', 'nat' ], [ 'bat' ] ]
 }
 anagram(input)

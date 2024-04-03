@@ -32,4 +32,5 @@ function mergeSort(arr) {
     let right = mergeSort(arr.slice(middle));
     return merge(left, right);
 }
-console.log(mergeSort([4,3,7,5,1,8,6]));
+console.log(mergeSort([10,3,5,6,2,4,1,8,7,9]));
+
