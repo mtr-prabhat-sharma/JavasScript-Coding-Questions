@@ -112,4 +112,41 @@ used with strings, it concatenates them. So "abc" + 10 results in the string "ab
 Then, when "abc10" is concatenated with 20, it's treated as string concatenation, resulting 
 in "abc1020".
 
+11. function timeout() {
+  setTimeout(() => {
+    console.log(x); // 2
+    console.log(y); // 12
+  }, 0);
+  console.log(x); // undefined
+  console.log(y); // ReferenceError: Cannot access 'y' before initialization
+  var x = 2;
+  let y = 12;
+}
+timeout()
+Explanation: setTimeout() function will be executed by event loop meanwhile it will read the 
+value of x and y.
+
+12. var myObject = { 
+    foo: "bar",    
+    func: function() {    
+        var self = this;    
+        console.log("outer func:  this.foo = " + this.foo); // bar    
+        console.log("outer func:  self.foo = " + self.foo); // bar   
+        (function() {    
+            console.log("inner func:  this.foo = " + this.foo); // undefined  
+            console.log("inner func:  self.foo = " + self.foo); // bar
+        }());    
+    }    
+};    
+myObject.func();
+
+Explanation: Each function has it's own context, to which this refers. 
+For first level functions, which are also called methods in some programming languages, 
+this refers to the current object for which it is called. But for the inner function 
+declared inside the func, it has it's own context, to which this refers. 
+So why this refers to undefined - not the the object. 
+But with another variable like self which is declared in the outer scope of that function, 
+you can access the outer variable. The key part is related to the variable with name this. 
+This is special.
+
 

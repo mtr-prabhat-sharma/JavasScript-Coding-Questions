@@ -10,4 +10,4 @@ function countOccurenceofCharacters(str) {
     }
     console.log(res);
 }
-countOccurenceofCharacters('prabhat sharma');
+countOccurenceofCharacters('prabhat sharma'); //{ p: 1, r: 2, a: 4, b: 1, h: 2, t: 1, ' ': 1, s: 1, m: 1 }
