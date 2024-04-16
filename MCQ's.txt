@@ -13,7 +13,8 @@ b.	‘5undefined3’
 c.	8
 d.	2
 Ans: 8
-Explanation: The - - part in the middle is interpreted as the subtraction operation with the unary negation operator. It's equivalent to 5 - (-3).
+Explanation: The - - part in the middle is interpreted as the subtraction operation with the 
+unary negation operator. It's equivalent to 5 - (-3).
 The string '5' is implicitly converted to the number 5.
 The string '-3' is implicitly converted to the number -3.
 The subtraction operation 5 - (-3) results in 8.
@@ -99,5 +100,16 @@ standalone function (not as a method or through the call/apply methods), the thi
 value inside the function will be undefined. In the provided code, the IIFE 
 (Immediately Invoked Function Expression) is invoked as a standalone function, 
 so this inside the function is undefined.
+
+9. console.log(10+20+"abc");
+Ans: 30abc
+Explanation: First addition and then concatination
+
+10. console.log("abc"+10+20);
+Ans: abc1020
+Explanation: JavaScript evaluates expressions from left to right. When the + operator is 
+used with strings, it concatenates them. So "abc" + 10 results in the string "abc10". 
+Then, when "abc10" is concatenated with 20, it's treated as string concatenation, resulting 
+in "abc1020".
 
 
