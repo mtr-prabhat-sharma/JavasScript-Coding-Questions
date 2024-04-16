@@ -149,4 +149,24 @@ But with another variable like self which is declared in the outer scope of that
 you can access the outer variable. The key part is related to the variable with name this. 
 This is special.
 
+13. console.log(a); //undefined
+    console.log(b); // b is not defined
+    var a = b = 5;
+Explanation: This is because var a = b = 5; is interpreted as var a = b; b = 5; and b 
+is not declared with any var.
+
+14. var x = 20;
+    function  foo() {
+        console.log(x); // undefined
+        var x = 10;
+        
+    }
+    foo()
+Explanation: This behavior is due to hoisting in JavaScript. When a variable is declared 
+with var, its declaration is hoisted to the top of its enclosing scope, but not its 
+initialization. So, the x variable inside the foo function is hoisted to the top of the 
+function, but its value remains undefined until the line where it is explicitly assigned a 
+value.
+
+
 
