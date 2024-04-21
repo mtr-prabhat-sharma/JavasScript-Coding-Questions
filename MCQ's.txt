@@ -169,4 +169,13 @@ function, but its value remains undefined until the line where it is explicitly 
 value.
 
 
-
+15. function counter() {
+    let count = 0;
+    return () => {
+        count++;
+       
+    }
+  }
+  let val = counter();
+  console.log(val()); //undefined
+  Explanation: 
