@@ -15,3 +15,18 @@ function demo(str) {
     console.log(reverseStr)
 }
 demo('my name is prabhat sharma'); //ym eman si tahbarp amrahs
+
+/*************************************************************************************/
+let str = "my name is kavita singh";
+let newStr = str.split(" ");
+let res = "";
+for(let i=0;i<newStr.length;i++){
+    if(newStr[i]!== " "){
+        res = res + newStr[i].split('').reverse().join('')+" ";
+    }else {
+        res = res+" ";
+    }
+    
+}
+console.log(res); //ym eman si ativak hgnis 
+/*************************************************************************************/
