@@ -6,5 +6,5 @@ function checkArray(ele) {
         console.log(`${ele} is an object`);
     }
 }
-checkArray([2,3]);
+checkArray([2,3]); // Is an array 
 checkArray({id:1,name:'demo'})
