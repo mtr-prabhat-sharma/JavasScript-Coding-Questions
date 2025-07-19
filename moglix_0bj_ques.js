@@ -27,3 +27,15 @@ demo(students);
   '35': [ { name: 'sita' } ]
 }
  */
+
+// Using reduce
+
+let res = students.reduce((acc,curr) => {
+     let key = curr.age:
+     if(!acc[key]){
+          acc[key]=[];
+      }
+      acc[key].push(curr.name);
+
+      return acc;
+}, {})
