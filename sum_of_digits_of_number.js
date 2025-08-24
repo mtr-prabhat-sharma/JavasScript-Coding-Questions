@@ -11,7 +11,7 @@ function sumOfDgits(num) {
 sumOfDgits(n)
 
 ******************************************************************
-// Without using loop
+// Without using loop (using  recursion)
 
 function sumOfDigits(num) {
     if (num === 0) {
