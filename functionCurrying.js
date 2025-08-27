@@ -21,10 +21,10 @@ console.log(sum1(1)(2)(4)(5)(6)());
 
 /***********************************************************************************/
  function sum(...args1) {
-    let total = args1.reduce((a,c) => a+c);
+    let total = args1.reduce((a,c) => a+c, 0);
     return function(...args) {
         if(args.length) {
-            let s = args.reduce((a,c) => a+c);
+            let s = args.reduce((a,c) => a+c, 0);
             return sum(s+total);
         }
         return total;
